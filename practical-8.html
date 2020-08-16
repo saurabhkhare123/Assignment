@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        ul{
+            margin-top: 0;
+            list-style-type: none;
+            margin: auto;
+            margin-bottom: 35px;
+            padding: 10px;
+            overflow: hidden;
+            background-color: gray;
+            width: 100%;
+            height: 45px;
+            display: flex;
+            justify-content: space-evenly;
+            position: fixed;
+            top: 0;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            display: block;
+            color: white;
+            font-weight: bold;
+            width: 135px;
+            padding: 10px 35px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+        }
+        p {
+            text-align: center;
+            color: black;
+            font-size: xx-large;
+            margin-bottom: 5px;
+        }
+    
+
+        .maincontainer {
+            padding: 10px;
+            width: 1200px;
+            margin: 0px auto;
+
+        }
+        .header {
+            height: 60px;
+            border-radius: 3px;
+            background-color: lightgray;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .banner {
+            width: 1200px;
+            height: 500px;
+            border-radius: 3px;
+            background-color: lightskyblue;
+            font-size: 40px;
+            color: white;
+            display: flex;
+            background-image: url(img/emile-perron-xrVDYZRGdw4-unsplash.jpg);
+            background-size: contain;
+            margin-bottom: 15px;
+        }
+        .section1 {
+            
+            text-align: center;
+            color: black;
+            font-size: x-large;
+            font-weight: bold;
+            padding: 10px;
+            
+
+
+
+        }
+        .pic1 {
+            width: 200px;
+            height: 200px;
+        
+            border-radius: 100px;
+            margin: 20px;
+            background-color: yellow;
+            display: inline-block;
+            background-size: contain;
+        }
+        .pic2 {
+            width: 200px;
+            height: 200px;
+            
+            border-radius: 100px;
+            margin: 20px;
+            background-color: yellow;
+            display: inline-block;
+            background-size: contain;
+        }
+        .pic3 {
+            width: 200px;
+            height: 200px;
+            
+            border-radius: 100px;
+            margin: 20px;
+            background-color: yellow;
+            display: inline-block;
+            background-size: contain;
+        }
+        .pic4 {
+            width: 200px;
+            height: 200px;
+        
+            border-radius: 100px;
+            margin: 20px;
+            background-color: yellow;
+            display: inline-block;
+            background-size: contain;
+        }
+        .section2 {
+            text-align: center;
+            color: black;
+            font-size: x-large;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 15px;
+
+        }
+        .section2:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .leftmain {
+            width: 50%;
+            height: 600px;
+            background-color: darkgray;
+            float: left;
+            font-size: 30px;
+            color: white;
+            text-align: start;
+            
+        
+        }
+        .leftmain p{
+            font-size:20px ;
+        }
+        .rightside{
+            width: 48%;
+            height: 600px;
+            float: right;
+            
+            
+            }
+        .article1 {
+            width: 100%;
+            height: 190px;
+            margin-bottom: 10px;
+            background-color: darkseagreen;
+            font-size: 40px;
+            color: white;
+            
+            background-size: contain;
+            text-align: center;
+        }
+        .article2 {
+            width: 100%;
+            height: 190px;
+            margin-bottom: 10px;
+            background-color: darkseagreen;
+            font-size: 40px;
+            color: white;
+            
+            
+            background-size: contain;
+        }
+        .article3 {
+            width: 100%;
+            height: 200px;
+            background-color: darkseagreen;
+            font-size: 40px;
+            color: white;
+            
+            
+            background-size: contain;
+        }
+        .section3 {
+            width: 98%;
+            height: 400px;
+            text-align: center;
+            color: black;
+            font-size: x-large;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 15px;
+
+        }
+        
+        
+       
+        
+        #boxes {
+            height: 280px;
+            display: flex;
+            width: 20%;
+            float: left;
+            flex-direction: column;
+            background-color: #ff4500;
+            margin-left: 40px;
+            margin-bottom: 20px;
+           background-color: grey;
+            
+        }
+      
+        #boxes h2{
+            font-size: 20px;
+            color: black;
+        }
+
+        #boxes p{
+            font-size:15px
+            
+        }
+        
+        .section3 a {
+            display: block;
+            height: 15px;
+
+            margin: 10px;
+            text-align: center;
+            background-color: red;
+            
+            text-decoration: none;
+            font: italic 20px small-caption;
+
+            padding: 10px;
+            border-radius: 8px;
+
+        } 
+        .background{
+    background-color:pink ;
+    background-size: cover;
+    background-blend-mode: darken;
+  
+}
+.background p{
+    font-size: 15px;
+}
+
+.waali{
+      text-align: center;
+      font-size: 20px;
+      padding: 30px 0;
+      font-family: 'Times New Roman', Times, serif;
+      display:flex ;
+      justify-content: center;
+      align-items: center;
+      color:white;
+  }  </style>
+
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="header"> <ul>
+            <li><a href="#1">HOME</a></li>
+            <li><a href="#2">ABOUT US</a></li>
+            <li><a href="#3">TEAM</a></li>
+            <li><a href="#4">TECHNOLOGIES</a></li>
+            <li><a href="#5">CONTACT</a></li>
+        </ul></div>
+        <div class="banner">
+            <a name="1"></a>
+            PRACTICAL-8</div>
+        <p> 
+            Team Members</p>
+            <a name="3"></a>
+       
+        <div class="section1">
+            <div class="pic1" style="background-image: url(img/1.png);"></div>
+            <div class="pic2" style="background-image: url(img/2.png);"></div>
+            <div class="pic3" style="background-image: url(img/3.png);" ></div>
+            <div class="pic4" style="background-image: url(img/9.png);" ></div>
+        </div>
+        <p>About Us</p> 
+        <a name="2"></a>
+        <div class="section2">
+            <div class="leftmain"> <h3>About Projects</h3>
+                <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laudantium necessitatibus debitis expedita similique officiis, error obcaecati illum rem vitae repudiandae explicabo earum doloribus aperiam veniam accusantium. Eaque enim, sit beatae ex aliquam aut. Sint minus distinctio a dolorem nihil, rerum minima sit delectus eveniet hic saepe molestias dicta, nam, velit ipsa! Ea provident illum adipisci veritatis quis nemo quod! Voluptas dolor deserunt sequi distinctio libero, sapiente voluptatum aliquid enim quisquam minima dignissimos aspernatur quos facilis, nostrum alias sit ullam? ipsum dolor, sit amet consectetur adipisicing elit. Labore voluptates commodi laudantium doloribus iusto facilis error quisquam quasi, expedita, ipsum totam fuga quae! Molestias esse nihil incidunt soluta sed.
+                </p>
+            </div>
+            <div class="rightside">
+                <div class="article1" style="background-image: url(img/p1.jpg);"><centre>Project-1</centre></div>
+                <div class="article2" style="background-image: url(img/p2.jpeg);" >Project-2</div>
+                <div class="article3" style="background-image: url(img/p3.jpg);">Project-3</div>
+            </div>
+            
+        </div>
+        <p>Techonolgies Used</p>
+        <a name="4"></a>
+
+        <div class="section3"> 
+            <div id="boxes">
+                <img src="img/introhtml.png" height="120px" width="100%" alt="html">
+                <h2>Introduction to  HTML</h2>
+                <p style="color: blanchedalmond;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi quidem harum natus illum provident excepturi vero error fugit quaerat.</p>
+            <a href="">Read more</a>
+            </div>
+            <div id="boxes"><img src="img/cssintro.jpeg" height="120px" width="100%" alt="html">
+                <h2>Introduction to css</h2>
+                <p style="color: blanchedalmond;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, labore doloribus eveniet animi recusandae quas iusto quam ducimus cumque iste!
+                </p>
+                <a href="">Read more</a>
+            </div>
+            
+            <div id="boxes"><img src="img/javaintro.jpeg" height="120px" width="100%" alt="html">
+            <h2>Introduction to javascript</h2>
+            <p style="color: blanchedalmond;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae hic voluptatibus expedita quos rerum impedit libero veniam quas laborum ipsa.</p>
+            <a href="">Read more</a>
+        </div>
+            <div id="boxes"><img src="img/bootintro.jpeg" height="120px" width="100%" alt="html">
+            <h2>
+                Introduction to Bootstrap
+            </h2>
+            <p style="color: blanchedalmond;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsum ipsa harum eos sapiente voluptas nihil. Repellat beatae dicta molestias?</p>
+            <a href="">Read more</a>
+        </div>
+        </div>
+        <h1><center>Contact</center></h1>
+        <a name="5"></a>
+    <footer class="background">
+        <h2 class="waali"><center>Website template for Practical-8 @Saurabh khare</center> </h2>
+        <p><a href="#">Back to the top</a></p>
+    </footer>
+</body>
+</html>
