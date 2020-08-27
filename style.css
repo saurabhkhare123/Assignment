@@ -1,0 +1,432 @@
+
+
+*{
+    padding:0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+ul{
+    width:70%;
+  
+    display: flex;
+    align-items: center; 
+    padding-right:55px ;
+   
+}
+ul li{
+    
+    list-style: none;
+    padding:20px 20px ;
+    margin-left:40px ;
+    margin-right: 40px;
+    
+    
+}
+a:hover{
+    color: greenyellow;
+}
+ul li a{
+   
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+}
+
+.header {
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor:pointer;
+    background-color: gray;
+}
+.banner
+{
+
+  background-image: url(img/emile-perron-xrVDYZRGdw4-unsplash.jpg); 
+  background-size: cover;
+  height: 600px;
+  margin-top: 10px;
+  display:flex;
+  
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
+  border-radius: 5px;
+}
+.team{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.circle{
+    margin-top: 35px;
+    height:180px;
+    width:180px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 25px;
+    margin-left: 25px;
+    background-size: cover;
+}
+
+.team::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.boxes{
+    margin-top: 40px;
+    margin-left: 85px;
+    margin-right: 50px;
+    
+}
+.box{
+    
+    margin-top:35px ;
+    height: 300px;
+    width: 250px;
+    background-color: turquoise;
+    margin-right: 25px;
+    margin-left: 25px;
+    float: left;
+    color: white;
+    margin-bottom:40px ;
+}
+.box p{
+    color: black;
+}
+.button{
+    margin-top:30px;
+    cursor: pointer;
+    width:240px ;
+    margin-left: 5px;
+    height: 30px;
+    background-color: red;
+    
+}
+.boxes::after {
+    content: "";
+    clear: both;
+    display: table;
+
+  }
+.About{
+    margin-top:40px ;
+    margin-left: 97px;
+    margin-right: 50px;
+    display: flex;
+    
+}
+
+.main{
+    width: 50%;
+    height: 600px;
+    background-size:cover;
+    color:teal;
+    display:table;
+    
+    
+}
+.main p{
+    color:black;
+    font-size: 23px;
+}
+.right{
+   
+    width: 48%;
+   
+    
+   
+}
+.aside{
+    color:teal;
+    height: 193px;
+    widows: 100%;
+    background-size: contain;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+
+.foot{
+    padding-top: 20px;
+    margin-top: 35px;
+    background-color: turquoise;
+    color: white;
+    height: 90px;
+    width:flex;
+}
+
+.burger{
+    display:none;
+ position:absolute;
+ cursor: pointer;
+ right: 5%;
+ top:15px;
+}
+
+.line{
+    
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin:3px;
+}
+
+
+
+/* first break point */
+@media (max-width: 1000px)
+{
+.header{
+    width: 1000px;
+    position: fixed; 
+} 
+.body{
+    padding-top: 0;
+}
+
+ul li{
+ margin-left: 15px;
+ margin-right: 60px;
+ padding-left: 5px;
+ 
+}
+ul li a{
+    font-size: 13px;
+}
+.banner{
+    
+    width: 1000px;
+    margin-left: 0px;
+    height: 500px;
+}
+.circle{
+
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+
+}
+.team{
+    margin-left: 220px;
+    margin-right: 150px;
+}
+.boxes{
+    margin-left: 150px;
+    margin-right: 100px;
+    
+}
+.team h1{
+    margin-right: 80px;
+}
+.About{
+    margin-left: 10px;
+    margin-right:0;
+}
+.main{
+    height: 750px;
+    width: 50%;
+}
+
+
+.box{
+    
+    height: 350px;
+    width:300px;
+    }
+
+.button{
+    margin-top:95px;
+    width:290px ;
+    
+}
+.aside{
+
+    height: 243px;
+}
+
+
+}
+
+
+/*Second break */
+@media (min-width:700px )and (max-width:1000px)
+{
+    .header{
+        width: 100%;
+        position: fixed; 
+    } 
+    .body{
+        padding-top: 0;
+    }
+    ul{
+        opacity: 0;
+    }
+    
+    .burger{
+        display: block;
+    }
+    .banner{
+        
+        width: 100%;
+        margin-left: 0px;
+        height: 400px;
+    }
+    .circle{
+    
+        width: 200px;
+        height: 200px;
+        margin-left: 30px;
+        margin-right: 30px;
+        
+    
+    }
+    .team{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .boxes{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    .team h1{
+        margin-right: 100px;
+        margin-left: 80px;
+    }
+    .About{
+        margin-left: 10px;
+        margin-right:0;
+    }
+    .main{
+        height: 750px;
+        width: 50%;
+        display:block;
+        
+    }
+    .main p{
+        font-size: 20px;
+    }
+    
+    .box{
+        
+        height: 350px;
+        width:270px;
+        
+        }
+    
+    .button{
+        margin-top:95px;
+        width:260px ;
+        
+    }
+    .aside{
+    
+        height: 243px;
+    }
+    
+}
+
+
+
+/*3rd Break */
+@media (min-width:414px) and (max-width:700px)
+{
+    .header{
+        width: 100%;
+        position: fixed; 
+    } 
+    .body{
+        padding-top: 0;
+    }
+    ul{
+        opacity: 0;
+    }
+    
+    .burger{
+        display: block;
+    }
+    .banner{
+        
+        width: 100%;
+        margin-left: 0px;
+        height: 300px;
+    }
+    .circle{
+    
+        width: 300px;
+        height: 300px;
+        margin-left: 30px;
+        margin-right: 30px;
+        
+    
+    }
+    .team{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .boxes{
+        margin-left: 100px;
+        margin-right: 10px;
+        
+    }
+    .boxes h1{
+        margin-right:55px ;
+    }
+    .team h1{
+        margin-right: 100px;
+        margin-left: 80px;
+    }
+    
+}
+
+    
+    .box{
+       
+        height: 350px;
+        width:270px;
+        
+        }
+    
+    .button{
+        margin-top:95px;
+        width:263px ;
+        
+    }
+    .About{
+        display: block;
+    }
+    .right{
+        width: 100%;
+        
+    }
+    .aside{
+        width:100%;
+        height: 200px;
+        display: block;
+        margin-left: 0px;
+    } 
+    .main{
+        height: 200px;
+        width: 100%;
+        display:block;
+        margin-bottom: 10px;
+        margin-left: 0;
+        
+    }
+    .main p{
+     font-size: 10px;
+    }
+}
