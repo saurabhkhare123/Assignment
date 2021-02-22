@@ -1,0 +1,43 @@
+.function{
+    background-color: lightskyblue;
+    text-align: center;
+    align-items: center;
+    padding: 10%;
+    margin:0 10% 0 10%;
+    border-radius: 19px;
+    margin-bottom: 10px;
+    
+
+}
+
+.class{
+    background-color: lightpink;
+    text-align: center;
+    align-items: center;
+    padding: 12%;
+    margin:0 10% 0 10%;
+    border-radius: 19px;
+    margin-bottom: 10px;
+    
+
+}
+
+.function h1, .class h1{
+    font-weight: bolder;
+}
+
+.function p, .class p{
+    font-weight: bold;
+    color: maroon;
+}
+.function p span,.class p span{
+    color: mediumblue;
+    padding: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+
+
+}
+
+
+
