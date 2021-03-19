@@ -1,0 +1,63 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Header{
+    margin-top: 20px;
+    height: 100px;
+    
+}
+
+.head1 {
+    display: flex;
+    background-color: gainsboro;
+    
+}
+.head1 h1{
+    margin-left: 10px;
+    
+}
+.hea {
+    display: flex;
+    margin-left: 400px;
+    width: 600px;
+}
+
+.head h1{
+    width: 20px;
+}
+
+.link {
+    margin-left: 530px;
+    margin-bottom: 10px;
+
+}
+
+.Header a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+a:hover{
+    color: yellow;
+}
+.main{
+    height: 550px;
+    width: 100%;
+    background-image: url("img.jpg");
+    background-size: cover ;
+}
+
+.trans
+    {
+        position: relative;
+        top: 40px;
+        left: 30px;
+        opacity: 0.5;
+        height: 200px;
+        width : 500px;
+        padding: 30px;
+        background-color: whitesmoke;
+      }
